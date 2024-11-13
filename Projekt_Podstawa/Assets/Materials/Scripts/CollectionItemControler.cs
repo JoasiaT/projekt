@@ -26,9 +26,9 @@ public class CollectionItemm : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag=="Player")
+        if (other.gameObject.tag == "Player")
         {
-            
+
             playerControler.zebranePunkty++;
             Debug.Log(playerControler.zebranePunkty);
             audioSource.PlayOneShot(audioClip);

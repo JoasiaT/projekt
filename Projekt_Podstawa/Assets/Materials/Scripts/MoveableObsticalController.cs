@@ -13,21 +13,21 @@ public class MoveableObsticalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (isMovingRight)
-        //{
-        //   transform.Translate(speed * Time.deltaTime, 0, 0);
-        //   if (transform.position.x > endPoint.position.x)
-        //    {
-        //        isMovingRight = false;
-        //    }
-        //}
-        //else
-        //{
-        //    transform.Translate(-speed * Time.deltaTime, 0, 0);
-        //    if (transform.position.x < startPoint.position.x)
-        //    {
-        //        isMovingRight = true;
-        //    }
-        //}
+       if (isMovingRight)
+       {
+          transform.Translate(speed * Time.deltaTime, 0, 0);
+           if (transform.position.x > endPoint.position.x)
+          {
+              isMovingRight = false;
+           }
+        }
+        else
+        {
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
+            if (transform.position.x < startPoint.position.x)
+            {
+               isMovingRight = true;
+            }
+        }
     }
 }
