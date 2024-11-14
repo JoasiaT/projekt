@@ -9,6 +9,7 @@ public class CollectionItemm : MonoBehaviour
     public AudioClip audioClip;
     public MeshRenderer meshRenderer;
     public CapsuleCollider capsuleCollider;
+    public MuffinController muffinController;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class CollectionItemm : MonoBehaviour
             audioSource.PlayOneShot(audioClip);
             meshRenderer.enabled = false;
             capsuleCollider.enabled = false;
+            muffinController.meshRenderer.enabled = false;
 
             //Destroy(this.gameObject);
         }
